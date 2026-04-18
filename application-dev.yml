@@ -1,3 +1,6 @@
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-}]"
 eureka:
     instance:
       prefer-ip-address: true
