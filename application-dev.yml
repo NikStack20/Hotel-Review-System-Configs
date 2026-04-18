@@ -7,7 +7,7 @@ management:
       endpoint: http://localhost:9411/api/v2/spans
 logging:
   pattern:
-    level: "%5p [${spring.application.name:},%X{traceId:-}]"
+    level: "%5p [%X{traceId:-},%X{spanId:-}]"
 eureka:
     instance:
       prefer-ip-address: true
