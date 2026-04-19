@@ -6,6 +6,9 @@ management:
     tracing:
       endpoint: http://localhost:9411/api/v2/spans
 otel:
+  exporter:
+    otlp:
+      enabled: false
   propagation:
     type: w3c
 logging:
