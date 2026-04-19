@@ -9,7 +9,7 @@ otel:
   traces:
     exporter: zipkin
   logs:
-    exporter: none  
+    exporter: "none"  
   exporter:
     otlp:
       enabled: false
