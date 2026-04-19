@@ -8,6 +8,8 @@ management:
 otel:
   traces:
     exporter: zipkin
+  logs:
+    exporter: none   
   exporter:
     otlp:
       enabled: false
